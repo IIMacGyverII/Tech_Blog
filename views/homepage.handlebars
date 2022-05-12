@@ -1,7 +1,7 @@
 		<section class="container">
 			<div class="columns">
 				<div class="column is-3">
-					<a class="button is-primary is-block is-alt is-large" href="#">New Post</a>
+					<a class="button is-primary is-block is-alt is-large" href="/newPost">New Post</a>
 					<aside class="menu">
 						<p class="menu-label">
 							Tags
@@ -31,7 +31,7 @@
 								<div class="media-content">
 									<div class="content">
 										<p>
-											<a href="#">{{user.username}}</a> replied 34 minutes ago &nbsp;
+											<a href="#">{{user.username}}</a> {{format_date post.date_created}} &nbsp;
 											<span class="tag">Question</span>
 										</p>
                                         <h7>{{post.content}}
