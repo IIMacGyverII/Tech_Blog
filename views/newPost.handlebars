@@ -1,60 +1,61 @@
 <div class="container">
-        <div class="columns">
-            <div class="column is-9">
-                <section class="hero is-info welcome is-small">
-                    <div class="hero-body">
-                        <div class="container">
-                            <h1 class="title">
-                              {{!-- {{#each posts as |post|}} --}}
-                                Hello! {{username}}
-                                {{!-- {{/each}} --}}
-                            </h1>
-                            <h2 class="subtitle">
-                                Use the form below to make a new post!
-                            </h2>
+    <div class="columns">
+        <div class="column is-9">
+            <section class="hero is-info welcome is-small">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                            {{!-- {{#each posts as |post|}} --}}
+                            Hello! {{username}}
+                            {{!-- {{/each}} --}}
+                        </h1>
+                        <h2 class="subtitle">
+                            Use the form below to make a new post!
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container has-text-centered">
+                    <h2 class="title">What would you like to post?</h2>
+                    <form class="new-post-form">
+                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                    <p class="control has-icons-left">
+                                        <input class="input" type="text" id="post-name" placeholder="Post Title">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <section class="section">
-                    <div class="container has-text-centered">
-                        <h2 class="title">What would you like to post?</h2>            
-                        <form>
-                            <div class="field is-horizontal">
-                                <div class="field-body">
-                                    <div class="field">
-                                        <p class="control has-icons-left">
-                                            <input class="input" type="text" placeholder="Post Title">
-                                            <span class="icon is-small is-left">
-                                                <i class="fas fa-user"></i>
-                                            </span>
-                                        </p>
+
+                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <textarea class="textarea" id="post-contents" placeholder="Post Contents"></textarea>
                                     </div>
                                 </div>
                             </div>
-            
-                            <div class="field is-horizontal">
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-                                            <textarea class="textarea" placeholder="Post Contents"></textarea>
-                                        </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-primary">
+                                            Submit New Post!
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="field is-horizontal">
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-                                            <button class="button is-primary">
-                                                Submit New Post!
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </div>
     </div>
+</div>
+<script src="../js/newPost.js"></script>

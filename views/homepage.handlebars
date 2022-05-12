@@ -1,72 +1,73 @@
-		<section class="container">
-			<div class="columns">
-				<div class="column is-3">
-					<a class="button is-primary is-block is-alt is-large" href="/newPost">New Post</a>
-					<aside class="menu">
-						<p class="menu-label">
-							Tags
-						</p>
-						<ul class="menu-list">
-							<li><span class="tag is-primary is-medium ">Dashboard</span></li>
-							<li><span class="tag is-link is-medium ">Customers</span></li>
-							<li><span class="tag is-light is-danger is-medium ">Authentication</span></li>
-							<li><span class="tag is-dark is-medium ">Payments</span></li>
-							<li><span class="tag is-success is-medium ">Transfers</span></li>
-							<li><span class="tag is-warning is-medium ">Balance</span></li>
-							<li><span class="tag is-medium ">Question</span></li>
-						</ul>
-					</aside>
-				</div>
-				<div class="column is-9">
-					<div class="box content">
-						<article class="post">
-							{{#each posts as |post|}}
-							<h4>{{post.title}}</h4>
-							<div class="media">
-								<div class="media-left">
-									<p class="image is-32x32">
-										<img src="http://bulma.io/images/placeholders/128x128.png">
-									</p>
-								</div>
-								<div class="media-content">
-									<div class="content">
-										<p>
-											<a href="#">{{user.username}}</a> {{format_date post.date_created}} &nbsp;
-											<span class="tag">Question</span>
-										</p>
-                                        <h7>{{post.content}}
-                                        </h7>
-									</div>
-								</div>
-								<div class="media-right">
-									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
-								</div>
+<section class="container">
+	<div class="columns">
+		<div class="column is-3">
+			<a class="button is-primary is-block is-alt is-large" href="/newPost">New Post</a>
+			<aside class="menu">
+				<p class="menu-label">
+					Tags
+				</p>
+				<ul class="menu-list">
+					<li><span class="tag is-primary is-medium ">Dashboard</span></li>
+					<li><span class="tag is-link is-medium ">Customers</span></li>
+					<li><span class="tag is-light is-danger is-medium ">Authentication</span></li>
+					<li><span class="tag is-dark is-medium ">Payments</span></li>
+					<li><span class="tag is-success is-medium ">Transfers</span></li>
+					<li><span class="tag is-warning is-medium ">Balance</span></li>
+					<li><span class="tag is-medium ">Question</span></li>
+				</ul>
+			</aside>
+		</div>
+		<div class="column is-9">
+			<div class="box content">
+				<article class="post">
+					{{#each posts as |post|}}
+					<h4>{{post.title}}</h4>
+					<div class="media">
+						<div class="media-left">
+							<p class="image is-32x32">
+								<img src="http://bulma.io/images/placeholders/128x128.png">
+							</p>
+						</div>
+						<div class="media-content">
+							<div class="content">
+								<p>
+									<a href="#">{{user.username}}</a> {{format_date post.date_created}} &nbsp;
+									<span class="tag">Question</span>
+								</p>
+								<h7>{{post.content}}
+								</h7>
 							</div>
-							{{/each}}
-						</article>
+						</div>
+						<div class="media-right">
+							<span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+						</div>
 					</div>
-				</div>
+					{{/each}}
+				</article>
 			</div>
-		</section>
-		<footer class="footer">
-			<div class="container">
-				<div class="content has-text-centered">
-					<div class="columns is-mobile is-centered">
-						<div class="field is-grouped is-grouped-multiline">
-							<div class="control">
-								<div class="tags has-addons">
-									<a class="tag is-link" href="https://github.com/BulmaTemplates/bulma-templates">Bulma Templates</a>
-									<span class="tag is-light">Daniel Supernault</span>
-								</div>
-							</div>
-							<div class="control">
-								<div class="tags has-addons">
-									<a class="tag is-link">The source code is licensed</a>
-									<span class="tag is-light">MIT &nbsp;<i class="fa fa-github"></i></span>
-								</div>
-							</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="content has-text-centered">
+			<div class="columns is-mobile is-centered">
+				<div class="field is-grouped is-grouped-multiline">
+					<div class="control">
+						<div class="tags has-addons">
+							<a class="tag is-link" href="https://github.com/BulmaTemplates/bulma-templates">Bulma
+								Templates</a>
+							<span class="tag is-light">Daniel Supernault</span>
+						</div>
+					</div>
+					<div class="control">
+						<div class="tags has-addons">
+							<a class="tag is-link">The source code is licensed</a>
+							<span class="tag is-light">MIT &nbsp;<i class="fa fa-github"></i></span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</div>
+</footer>
