@@ -1,5 +1,3 @@
-
-		
 		<section class="container">
 			<div class="columns">
 				<div class="column is-3">
@@ -22,7 +20,8 @@
 				<div class="column is-9">
 					<div class="box content">
 						<article class="post">
-							<h4>Why MVC is so important</h4>
+							{{#each posts as |post|}}
+							<h4>{{post.title}}</h4>
 							<div class="media">
 								<div class="media-left">
 									<p class="image is-32x32">
@@ -32,11 +31,10 @@
 								<div class="media-content">
 									<div class="content">
 										<p>
-											<a href="#">Lerantino</a> replied 34 minutes ago &nbsp;
+											<a href="#">{{user.username}}</a> replied 34 minutes ago &nbsp;
 											<span class="tag">Question</span>
 										</p>
-                                        <h7>MVC allows developers to maintain a true separation of concerns, devising thier code between the Model layer for data,
-                                            the View layer for design, and the Controller layer for application logic.
+                                        <h7>{{post.content}}
                                         </h7>
 									</div>
 								</div>
@@ -44,52 +42,7 @@
 									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
 								</div>
 							</div>
-						</article>
-						<article class="post">
-							<h4>Authentication vs. Authorization</h4>
-							<div class="media">
-								<div class="media-left">
-									<p class="image is-32x32">
-										<img src="http://bulma.io/images/placeholders/128x128.png">
-									</p>
-								</div>
-								<div class="media-content">
-									<div class="content">
-										<p>
-											<a href="#">Xandromus</a> replied 40 minutes ago &nbsp;
-											<span class="tag">Question</span>
-										</p>
-                                        <h7>There is a difference between authentication and authorization. Authorization means confirming your own identity, 
-                                            whereas authorizaiton means being allowed access to the system.
-                                        </h7>
-									</div>
-								</div>
-								<div class="media-right">
-									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
-								</div>
-							</div>
-						</article>
-						<article class="post">
-							<h4>Object-Relational Mapping</h4>
-							<div class="media">
-								<div class="media-left">
-									<p class="image is-32x32">
-										<img src="http://bulma.io/images/placeholders/128x128.png">
-									</p>
-								</div>
-								<div class="media-content">
-									<div class="content">
-										<p>
-											<a href="#">Lernantino</a> replied 53 minutes ago &nbsp;
-											<span class="tag">Question</span>
-										</p>
-                                        <h7>I have really loved learning about ORMs.  It's really simplified the way I create queries in SQL!</h7>
-									</div>
-								</div>
-								<div class="media-right">
-									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
-								</div>
-							</div>
+							{{/each}}
 						</article>
 					</div>
 				</div>
