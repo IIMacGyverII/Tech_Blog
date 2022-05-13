@@ -18,9 +18,8 @@ function initializedEventListeners() {
   let deleteButtons = document.querySelectorAll('.deletePostBtn');
 
   for (let i = 0; i < deleteButtons.length; i++) {
-    deleteButtons[i].addEventListener("click", delButtonHandler);
+    deleteButtons[i].addEventListener('click', delButtonHandler);
   }
-
 }
 
 initializedEventListeners();

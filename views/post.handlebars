@@ -1,108 +1,61 @@
-<section class="container">
-      <div class="columns is-multiline">
-        <div class="column is-11 is-offset-2 register">
-          <div class="columns">
-            <div class="column left">
-              <h3 class="title is-1">{{title}}</h3>
-              <h4 class="subtitle colored is-4">Created by {{user.username}}</h2>
-              <p>{{{description}}}</p>
-            </div>
-            <div class="column right has-text-centered">
-              <h3 class="title is-4">Alergies and Prefereneces</h1>
-              {{#if isGlutenFree}}
-              <p>Gluten Free!</p>
-              {{/if}}
-              {{#if isNutFree}}
-              <p>Nut Free!</p>
-              {{/if}}
-              {{#if isVegan}}
-                <p>Vegan!</p>
-              {{/if}}
-              {{#if isDairyFree}}
-              <p>Dairy Free!</p>
-              {{/if}}
-              {{#if isVegetarian}}
-              <p>Vegetarian!</p>
-              {{/if}}
-            </div>
-            <div class="column left">
-              <h3 class="title is-5">Enjoy this randomly generated cocktail with your meal...!</h3>
-              <h3 id="drinkName" class="title is-3"></h3>
-              <img id="drinkImg" src="https://images.unsplash.com/photo-1587223962930-cb7f31384c19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
-            </div>
+<div class="container">
+  <div class="columns">
+    <div class="column is-9">
+      <section class="hero is-info welcome is-small">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              {{!-- {{#each posts as |post|}} --}}
+              Hello! {{username}}
+              {{!-- {{/each}} --}}
+            </h1>
+            <h2 class="subtitle">
+              Use the form below to make a new post!
+            </h2>
           </div>
         </div>
-          </nav>
-        </div>
-      </div>
-    </section>
-  </body>
-  <style>
-    :root {
-      --brandColor: hsl(166, 67%, 51%);
-      --background: rgb(247, 247, 247);
-      --textDark: hsla(0, 0%, 0%, 0.66);
-      --textLight: hsla(0, 0%, 0%, 0.33);
-    }
-    body {
-      background: var(--background);
-      height: 100vh;
-      color: var(--textDark);
-    }
-    .field:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-    .register {
-      margin-top: 10rem;
-      background: white;
-      border-radius: 10px;
-    }
-    .left,
-    .right {
-      padding: 4.5rem;
-    }
-    .left {
-      border-right: 5px solid var(--background);
-    }
-    .left .title {
-      font-weight: 800;
-      letter-spacing: -2px;
-    }
-    .left .colored {
-      color: var(--brandColor);
-      font-weight: 500;
-      margin-top: 1rem !important;
-      letter-spacing: -1px;
-    }
-    .left p {
-      color: var(--textLight);
-      font-size: 1.15rem;
-    }
-    .right .title {
-      font-weight: 800;
-      letter-spacing: -1px;
-    }
-    .right .description {
-      margin-top: 1rem;
-      margin-bottom: 1rem !important;
-      color: var(--textLight);
-      font-size: 1.15rem;
-    }
-    .right small {
-      color: var(--textLight);
-    }
-    input {
-      font-size: 1rem;
-    }
-    input:focus {
-      border-color: var(--brandColor) !important;
-      box-shadow: 0 0 0 1px var(--brandColor) !important;
-    }
-    .fab,
-    .fas {
-      color: var(--textLight);
-      margin-right: 1rem;
-    }
-  </style>
+      </section>
+      <section class="section">
+        <div class="container has-text-centered">
+          <h2 class="title">What would you like to post?</h2>
+          <form class="new-post-form">
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <p class="control has-icons-left">
+                    <input class="input" type="text" id="post-title" placeholder="Post Title">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-<script src="../js/apiTest.js"></script>
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <textarea class="textarea" id="post-contents" placeholder="Post Contents"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-primary">
+                      Submit New Post!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="../js/post.js"></script>

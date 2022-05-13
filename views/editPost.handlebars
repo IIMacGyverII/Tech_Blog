@@ -6,24 +6,24 @@
                     <div class="container">
                         <h1 class="title">
                             {{!-- {{#each posts as |post|}} --}}
-                            Hello! {{username}}
+                            Hello {{username}}!
                             {{!-- {{/each}} --}}
                         </h1>
                         <h2 class="subtitle">
-                            Use the form below to make a new post!
+                            Use the form below to edit your post!
                         </h2>
                     </div>
                 </div>
             </section>
             <section class="section">
                 <div class="container has-text-centered">
-                    <h2 class="title">What would you like to post?</h2>
+                    <h2 class="title">What would you like to edit?</h2>
                     <form class="new-post-form">
                         <div class="field is-horizontal">
                             <div class="field-body">
                                 <div class="field">
                                     <p class="control has-icons-left">
-                                        <input class="input" type="text" id="post-name" placeholder="Post Title">
+                                        <input class="input" type="text" id="post-title" placeholder="Post Title">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
                                         </span>
@@ -36,7 +36,8 @@
                             <div class="field-body">
                                 <div class="field">
                                     <div class="control">
-                                        <textarea class="textarea" id="post-contents" placeholder="Post Contents"></textarea>
+                                        <textarea class="textarea" id="post-contents"
+                                            placeholder="Post Contents"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -58,4 +59,4 @@
         </div>
     </div>
 </div>
-<script src="../js/newPost.js"></script>
+<script src="../js/post.js"></script>
