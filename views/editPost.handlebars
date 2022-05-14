@@ -17,13 +17,14 @@
             </section>
             <section class="section">
                 <div class="container has-text-centered">
-                    <h2 class="title">What would you like to edit?</h2>
-                    <form class="new-post-form">
+                    <h2 class="title">Post Details</h2>
+                    <form class="update-post-form">
                         <div class="field is-horizontal">
                             <div class="field-body">
                                 <div class="field">
                                     <p class="control has-icons-left">
-                                        <input class="input" type="text" id="post-title" placeholder="Post Title">
+                                        <input id="post-title" class="input class=" checkState"" type="text"
+                                            value="{{title}}">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
                                         </span>
@@ -31,13 +32,11 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="field is-horizontal">
                             <div class="field-body">
                                 <div class="field">
                                     <div class="control">
-                                        <textarea class="textarea" id="post-contents"
-                                            placeholder="Post Contents"></textarea>
+                                        <textarea id="post-contents" class="textarea">{{content}}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -46,9 +45,8 @@
                             <div class="field-body">
                                 <div class="field">
                                     <div class="control">
-                                        <button class="button is-primary">
-                                            Submit New Post!
-                                        </button>
+                                        <button class="button is-primary" id="updatePostBtn">Submit Post
+                                            Edit!</button>
                                     </div>
                                 </div>
                             </div>
@@ -59,4 +57,4 @@
         </div>
     </div>
 </div>
-<script src="../js/post.js"></script>
+<script src="/js/editPost.js"></script>

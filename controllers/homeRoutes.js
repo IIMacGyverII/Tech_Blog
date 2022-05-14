@@ -44,7 +44,7 @@ router.get('/post', async (req, res) => {
     const posts = postData.map((post) => post.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('post', { 
+    res.render('viewPost', { 
       posts, 
       logged_in: req.session.logged_in 
     });
@@ -66,7 +66,7 @@ router.get('/post/:id', async (req, res) => {
 
     const post = postData.get({ plain: true });
 
-    res.render('post', {
+    res.render('viewPost', {
       ...post,
       logged_in: req.session.logged_in
     });
@@ -95,7 +95,7 @@ console.log(user)
   }
 });
 
-router.get('/post', async (req, res) => {
+router.get('/newpost', async (req, res) => {
   try {
     // Get all posts and JOIN with user data
     const postData = await Post.findAll({
@@ -111,7 +111,7 @@ router.get('/post', async (req, res) => {
     const posts = postData.map((post) => post.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('post', { 
+    res.render('newpost', { 
       posts, 
       logged_in: req.session.logged_in 
     });
@@ -120,18 +120,21 @@ router.get('/post', async (req, res) => {
   }
 });
 
-router.get('/editPost', withAuth, async (req, res) => {
+router.get('/post/:id/edit', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Post }],
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        },
+      ],
     });
 
-    const user = userData.get({ plain: true });
+    const post = postData.get({ plain: true });
 
     res.render('editPost', {
-      ...user,
+      ...post,
       logged_in: true
     });
   } catch (err) {
