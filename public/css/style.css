@@ -112,7 +112,7 @@ header, .project:not(:last-child) {
   min-width: 100%;
 }
 
-.box {
+.boxProfile {
   margin-top: 0rem;
   box-shadow: 0 0 10px 2px;
   min-width: 65vw;
