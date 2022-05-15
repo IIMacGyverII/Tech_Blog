@@ -34,6 +34,15 @@ header, .project:not(:last-child) {
   padding: 0px;
 }
 
+.btnSpacing{
+  margin-bottom: 10px;
+}
+
+.profileBtnMargin {
+  margin-bottom: -25px;
+  margin-left: -25px;
+}
+
 .postContainer {
   margin-top: -3%;
   margin-bottom: -3%;
