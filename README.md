@@ -8,6 +8,8 @@
     1. Run "npm i" in the terminal then "node server.js"
 ## Usage
     1. Open the heroku link.
+## Heroku link to view deployed project
+https://peaceful-dawn-10531.herokuapp.com/
 ## ScreenShot
 [![Demo Video](https://raw.githubusercontent.com/IIMacGyverII/Tech_Blog/main/techBlogSSpng.png)]
 ## Demonstration Video(Click to play)

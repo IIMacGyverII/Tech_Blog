@@ -142,10 +142,9 @@ router.get('/post/:id/edit', withAuth, async (req, res) => {
   }
 });
 
-router.get('/newcomment', async (req, res) => {
+router.get('/comment/:id/comment', async (req, res) => {
   try {
-    // Get all comments and JOIN with user data
-    const commentData = await Comment.findAll({
+    const commentData = await Comment.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -154,18 +153,18 @@ router.get('/newcomment', async (req, res) => {
       ],
     });
 
-    // Serialize data so the template can read it
-    const comments = commentData.map((comment) => comment.get({ plain: true }));
+    const comment = commentData.get({ plain: true });
 
-    // Pass serialized data and session flag into template
-    res.render('newcomment', { 
-      comments, 
-      logged_in: req.session.logged_in 
+    res.render('newComment', {
+      ...comment,
+      logged_in: req.session.logged_in
     });
   } catch (err) {
-    res.status(500).json(err);
+    console.log(err)
+    res.sendFile(path.join(__dirname, '../public/pages/404.html'));
   }
 });
+
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route

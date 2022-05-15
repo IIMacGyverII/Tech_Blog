@@ -22,7 +22,8 @@
         <div class="field-body">
           <div class="field">
             <div class="control boxShadow borderRadius">
-              <textarea class="textarea" id="post-contents" placeholder="Comment"></textarea>
+              <textarea class="textarea" id="comment" placeholder="{{id}}"></textarea>
+              <input type="hidden" value="{{id}}" name="post-id"> 
             </div>
           </div>
         </div>
@@ -31,7 +32,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <button class="button is-primary">
+              <button class="button is-primary" id="addCommentBtn">
                 Submit Comment!
               </button>
             </div>
@@ -44,4 +45,4 @@
 </div>
 </div>
 </div>
-<script src="/js/post.js"></script>
+<script src="/js/addComment.js"></script>
