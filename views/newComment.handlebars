@@ -1,0 +1,47 @@
+<section class="container boxShadow borderRadius">
+  <div class="columns is-multiline">
+    <div class="column is-12 register">
+      <div class="columns cardMargin">
+        <div class="column is-12 border cardMargin2 postContainer">
+          <h3 class="title is-4">{{title}}</h3>
+          <h4 class="subtitle colorLightBlue is-5">Created by {{user.username}}</h2>
+            <p>{{{content}}}</p>
+        </div>
+      </div>
+      {{!-- <span class="button is-link modal-button editPostBtn" data-id="{{post.id}}" data-target="modal-card">Make a
+        comment on this post</span> --}}
+    </div>
+  </div>
+</section>
+</body>
+<section class="section">
+  <div class="container has-text-centered">
+    <h2 class="title">What would you like to comment on this post?</h2>
+    <form class="new-post-form">
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="field">
+            <div class="control boxShadow borderRadius">
+              <textarea class="textarea" id="post-contents" placeholder="Comment"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary">
+                Submit Comment!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+</div>
+</div>
+</div>
+<script src="/js/post.js"></script>
