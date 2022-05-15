@@ -1,8 +1,8 @@
-<section class="container">
+<section class="container boxShadow borderRadius">
   <div class="columns is-multiline">
     <div class="column is-12 register">
       <div class="columns cardMargin">
-        <div class="column is-3 border cardMargin2">
+        <div class="column is-12 border cardMargin2 postContainer">
           <h3 class="title is-4">{{title}}</h3>
           <h4 class="subtitle colorLightBlue is-5">Created by {{user.username}}</h2>
             <p>{{{content}}}</p>
@@ -15,6 +15,7 @@
 </section>
 </body>
 <style>
+
   :root {
     --brandColor: hsl(166, 67%, 51%);
     --background: #ECF0F3;
@@ -33,7 +34,7 @@
   }
 
   .register {
-    margin-top: 10rem;
+    margin-top: 0rem;
     background: white;
     border-radius: 10px;
   }

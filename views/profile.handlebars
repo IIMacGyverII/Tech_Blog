@@ -1,7 +1,7 @@
 <section class="container">
   <div class="columns">
     <div class="column is-3">
-      <a class="button is-primary is-block is-alt is-large" href="/post">New Post</a>
+      <a class="button is-primary is-block is-alt is-large boxShadow" href="/newPost">New Post</a>
       <aside class="menu">
         <p class="menu-label">
           Tags
@@ -19,7 +19,7 @@
     </div>
     <div class="container">
       <div class="columns">
-        <div class="column is-9">
+        <div class="column is-12">
           <section class="hero is-info welcome is-small">
             <div class="hero-body">
               <div class="container">
@@ -35,7 +35,7 @@
             </div>
           </section>
           {{#each posts as |post|}}
-          <div class="column is-9">
+          <div class="column noPadding is-9">
             <div class="box content">
               <article class="post">
                 <h4>{{post.title}}</h4>
