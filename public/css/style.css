@@ -205,3 +205,7 @@ input:focus {
   color: var(--textLight);
   margin-right: 1rem;
 }
+
+.newPost {
+  font-size: 36pt;
+}
