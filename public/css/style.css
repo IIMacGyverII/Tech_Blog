@@ -22,3 +22,68 @@ header, .project:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
+#column {
+  padding: 1.5rem;
+  margin: 0px;
+}
+
+.columns {
+  padding: 0px;
+  margin: 0px;
+} */
+
+.card {
+  padding: 0px;
+  margin: 0px;
+}
+
+.left {
+  padding: 1.5rem;
+}
+
+.right {
+  padding: 1.5rem;
+}
+
+.colorLightBlue {
+  color:#1b89bc;
+}
+
+#colorRed {
+  background-color: #bc1b49;
+  /* color: #bc1b49; */
+}
+
+.cardMargin {
+  margin-right: 2px;
+}
+.cardMargin2 {
+  margin-right: 50px;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.centerContent {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero.is-small .hero-body {
+  /* padding: 1.5rem; */
+  text-align: center;
+}
+
+.noFlex {
+  display: inline-block;
+}
+
+/* .border {
+  border: 2px solid black;
+} */
+
+.minWidth {
+  min-width: 100%;
+}
