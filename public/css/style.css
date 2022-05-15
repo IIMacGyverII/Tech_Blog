@@ -210,3 +210,8 @@ input:focus {
 .newPost {
   font-size: 36pt;
 }
+
+.newPostButton {
+  line-height: 1.5rem;
+  width: 100%;
+}
