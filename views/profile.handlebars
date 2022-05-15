@@ -1,7 +1,7 @@
 <section class="container">
   <div class="columns">
     <div class="column is-3">
-      <a class="button is-primary is-alt is-large newPostButton boxShadow newPost" href="/newPost">New Post</a>
+      <a class="button is-primary is-alt is-large newPostButton boxShadow newPost textShadow" href="/newPost">New Post</a>
       {{!-- <aside class="menu">
         <p class="menu-label">
           Tags
@@ -20,15 +20,15 @@
     <div class="container">
       <div class="columns">
         <div class="column is-12">
-          <section class="hero is-info welcome is-small ">
+          <section class="hero is-info welcome is-small blueHeader">
             <div class="hero-body">
               <div class="container">
-                <h1 class="title">
+                <h1 class="title textShadow">
                   {{!-- {{#each posts as |post|}} --}}
                   Hello! {{username}}
                   {{!-- {{/each}} --}}
                 </h1>
-                <h2 class="subtitle">
+                <h2 class="subtitle textShadow">
                   Welcome to your dashboard. Below you will see your posts.
                 </h2>
               </div>
@@ -38,7 +38,7 @@
           <div class="column noPadding is-9">
             <div class="box content boxProfile">
               <article class="post">
-                <h4>{{post.title}}</h4>
+                <h4 class="textShadow1px">{{post.title}}</h4>
                 <div class="media btnSpacing">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -49,9 +49,9 @@
                     <div class="content">
                       <p>
                         <a href="#">{{user.username}}</a> {{format_date post.date_created}} &nbsp;
-                        <span class="tag">Question</span>
+                        <span class="tag textShadow1px">Question</span>
                       </p>
-                      <h7>{{post.content}}
+                      <h7 class="textShadow1px">{{post.content}}
                       </h7>
                     </div>
                   </div>
@@ -60,11 +60,11 @@
                   </div>
                 </div>
                 <div class="form-group profileBtnMargin">
-                  <span class="button is-link modal-button editPostBtn" data-id="{{post.id}}"
+                  <span class="button is-link modal-button textShadow editPostBtn" data-id="{{post.id}}"
                     data-target="modal-card">Edit Post</span>
                   {{!-- <button class="button is-primary is-block is-alt is-large editPostBtn" id="colorRed"
                     data-id="{{post.id}}">Edit Post</button> --}}
-                  <span class="button is-danger modal-button deletePostBtn" data-target="modal-card"
+                  <span class="button is-danger modal-button textShadow deletePostBtn" data-target="modal-card"
                     data-id="{{post.id}}">Delete Post</span>
                   {{!-- <button class="btn btn-danger deletePostBtn" data-id={{post.id}}>Delete Post</button> --}}
                 </div>

@@ -126,6 +126,35 @@ header, .project:not(:last-child) {
   box-shadow: 0 0 10px 2px;
 }
 
+.newPostButton {
+  line-height: 1.5rem;
+  width: 100%;
+  /* box-shadow: inset 0 0 10px 2px; */
+  
+}
+
+.textShadow {
+  text-shadow: 0 0 5px black;
+}
+
+.textShadow1px {
+  text-shadow: 0 0 1px black;
+}
+
+.blueHeader {
+  border-radius: 15px;
+  /* box-shadow: inset 0 0 10px 2px; */
+}
+
+.avatar img {
+  padding: 5px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+  box-shadow: 0px 0px 2px 6px rgb(0 0 0 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+}
+
+/* for viewPost page */
 :root {
   --brandColor: hsl(166, 67%, 51%);
   --background: #ECF0F3;
@@ -206,12 +235,3 @@ input:focus {
   margin-right: 1rem;
 }
 
-/* needs fix review */
-.newPost {
-  font-size: 36pt;
-}
-
-.newPostButton {
-  line-height: 1.5rem;
-  width: 100%;
-}
