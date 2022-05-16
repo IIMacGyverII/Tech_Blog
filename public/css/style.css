@@ -133,9 +133,9 @@ header, .project:not(:last-child) {
   
 }
 
-.editPostBtn {
-  /* margin-right: 20px; */
-}
+/* .editPostBtn {
+  margin-right: 20px;
+} */
 
 .deletePostBtn {
   float: right;
