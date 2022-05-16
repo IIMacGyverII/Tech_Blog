@@ -142,6 +142,10 @@ header, .project:not(:last-child) {
   margin-right: -25px;
 }
 
+.postBox {
+  margin-bottom: 5px;
+}
+
 .floatRight {
   float: right;
 }
