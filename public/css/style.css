@@ -142,6 +142,15 @@ header, .project:not(:last-child) {
   margin-right: -25px;
 }
 
+.floatRight {
+  float: right;
+}
+
+.registerLoginBtn {
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
 .textShadow {
   text-shadow: 0 0 5px black;
 }
