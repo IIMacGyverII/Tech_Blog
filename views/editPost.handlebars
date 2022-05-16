@@ -1,15 +1,15 @@
 <div class="container">
     <div class="columns">
         <div class="column is-9">
-            <section class="hero is-info welcome is-small borderRadius">
+            <section class="hero is-info welcome is-small blueHeader boxShadow">
                 <div class="hero-body">
                     <div class="container">
-                        <h1 class="title">
+                        <h1 class="title textShadow">
                             {{!-- {{#each posts as |post|}} --}}
                             Hello {{username}}!
                             {{!-- {{/each}} --}}
                         </h1>
-                        <h2 class="subtitle">
+                        <h2 class="subtitle textShadow">
                             Use the form below to edit your post!
                         </h2>
                     </div>
@@ -17,13 +17,13 @@
             </section>
             <section class="section">
                 <div class="container has-text-centered">
-                    <h2 class="title">Post Details</h2>
+                    <h2 class="title textShadow1px">Post Details</h2>
                     <form class="update-post-form">
                         <div class="field is-horizontal">
                             <div class="field-body">
                                 <div class="field">
                                     <p class="control has-icons-left boxShadow borderRadius">
-                                        <input id="post-title" class="input class=" checkState"" type="text"
+                                        <input id="post-title textShadow1px" class="input" class="checkState" type="text"
                                             value="{{title}}">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
@@ -45,7 +45,7 @@
                             <div class="field-body">
                                 <div class="field">
                                     <div class="control">
-                                        <button class="button is-primary" id="updatePostBtn">Submit Post
+                                        <button class="button is-primary textShadow1px boxShadow" id="updatePostBtn">Submit Post
                                             Edit!</button>
                                     </div>
                                 </div>
