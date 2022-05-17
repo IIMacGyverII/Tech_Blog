@@ -8,9 +8,53 @@
             <p class="textShadow1px">{{{content}}}</p>
         </div>
       </div>
-      <span class="button is-link modal-button textShadow1px boxShadow editPostBtn" data-id="{{post.id}}"
-                    data-target="modal-card textShadow1px">Make a comment on this post</span>
+      <span class="button is-link modal-button textShadow boxShadow" id="addCommentBtn" data-id="{{id}}"
+        data-target="modal-card">Add A comment</span>
     </div>
   </div>
 </section>
-</body>
+<p>test</p>
+
+<section>
+  <div class="column noPadding is-9">
+    <div class="box content boxProfile">
+      {{#if Comments.length}}
+      {{#each addcomment as |comment|}}
+      <article class="post">
+        <h4 class="textShadow1px"><a class="techBlogColor"></a>{{comment.user.name}}</a></h4>
+        <div class="media btnSpacing">
+          <div class="media-left">
+            <p class="image is-32x32">
+              <img src="http://bulma.io/images/placeholders/128x128.png">
+            </p>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <a href="#">{{user.username}}</a> {{format_date post.date_created}} &nbsp;
+                <span class="tag textShadow1px">Question</span>
+              </p>
+              <h7 class="textShadow1px">{{post.content}}
+              </h7>
+            </div>
+          </div>
+          <div class="media-right">
+            <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+          </div>
+        </div>
+        <div class="form-group profileBtnMargin">
+          <span class="button is-link modal-button textShadow boxShadow editPostBtn" data-id="{{post.id}}"
+            data-target="modal-card">Edit Post</span>
+          {{!-- <button class="button is-primary is-block is-alt is-large editPostBtn" id="colorRed"
+            data-id="{{post.id}}">Edit Post</button> --}}
+          <span class="button is-danger modal-button textShadow boxShadow deletePostBtn" data-target="modal-card"
+            data-id="{{post.id}}">Delete Post</span>
+          {{!-- <button class="btn btn-danger deletePostBtn" data-id={{post.id}}>Delete Post</button> --}}
+        </div>
+      </article>
+      {{/each}}
+      {{/if}}
+    </div>
+</section>
+
+<script src="/js/viewPost.js"></script>

@@ -30,6 +30,10 @@ header, .project:not(:last-child) {
   align-items: flex-start;
 }
 
+/* .loginTopMargin {
+  margin-top: -10vh;
+} */
+
 .postView {
   margin-top: -91px;
 }
