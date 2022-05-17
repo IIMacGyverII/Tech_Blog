@@ -11,7 +11,7 @@
 ## Heroku link to view deployed project
 https://peaceful-dawn-10531.herokuapp.com/
 ## ScreenShot
-[![Demo Video](https://raw.githubusercontent.com/IIMacGyverII/Tech_Blog/main/techBlogSSpng.png)]
+![Demo Video](https://raw.githubusercontent.com/IIMacGyverII/Tech_Blog/main/techBlogSSpng.png)
 ## Demonstration Video(Click to play)
 Comming soon!
 ## Credit
