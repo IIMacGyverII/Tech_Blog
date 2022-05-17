@@ -17,4 +17,4 @@ https://peaceful-dawn-10531.herokuapp.com/
 ## Credit
     All my instructors at Northwestern and my study groups.
 ## Licenses Used
-No licenses used
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
