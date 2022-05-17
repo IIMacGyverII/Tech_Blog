@@ -21,7 +21,7 @@
 			<div class="box content boxShadow">
 				<article class="post">
 					{{#each posts as |post|}}
-					<h4 class="textShadow1px"><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+					<h4 class="textShadow1px"><a class="techBlogColor" href="/post/{{post.id}}">{{post.title}}</a></h4>
 					<div class="media postBox">
 						<div class="media-left">
 							<p class="image is-32x32">
@@ -32,7 +32,7 @@
 							<div class="content">
 								<p>
 									<a class="textShadow1px" href="#">{{user.username}}</a> {{format_date post.date_created}} &nbsp;
-									<span class="tag is-primary boxShadow">Post</span>
+									<span class="tag is-primary">Post</span>
 								</p>
 								<h7 class="textShadow1px">{{post.content}}
 								</h7>

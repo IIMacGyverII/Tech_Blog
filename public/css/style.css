@@ -30,6 +30,12 @@ header, .project:not(:last-child) {
   align-items: flex-start;
 }
 
+.techBlogColor {
+  color:#ef184d;
+  /* font-family: 'Agency FB', arial;
+  font-size: 18pt; */
+}
+
 .noPadding {
   padding: 0px;
 }
@@ -43,6 +49,9 @@ header, .project:not(:last-child) {
   margin-left: -25px;
 }
 
+.negativeMargin {
+  margin-bottom: -15px;;
+}
 .postContainer {
   margin-top: -3%;
   margin-bottom: -3%;
@@ -143,7 +152,7 @@ header, .project:not(:last-child) {
 }
 
 .postBox {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .floatRight {
@@ -161,6 +170,10 @@ header, .project:not(:last-child) {
 
 .textShadow1px {
   text-shadow: 0 0 1px black;
+}
+
+.textShadowHalfpx {
+  text-shadow: 0 0 .5px black;
 }
 
 .blueHeader {
