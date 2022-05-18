@@ -44,6 +44,16 @@ header, .project:not(:last-child) {
   /* float: center; */
 }
 
+.comment {
+  margin-top: 1rem;
+  /* margin-right: 20%; */
+  /* margin-left:10%; */
+  /* min-width: 80%; */
+  /* display:flex;
+  flex-wrap: wrap;
+  justify-content: right; */
+}
+
 .techBlogColor {
   color:#ef184d;
   /* font-family: 'Agency FB', arial;
@@ -174,6 +184,9 @@ header, .project:not(:last-child) {
   float: right;
 }
 
+.floatCenter {
+  margin: 0 auto;
+}
 .registerLoginBtn {
   margin-top: 5px;
   margin-bottom: -5px;

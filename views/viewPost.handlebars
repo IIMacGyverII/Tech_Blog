@@ -15,10 +15,10 @@
 </section>
  {{#each comments as |comment|}}
 <section>
-  <div class="column noPadding is-9">
-    <div class="box content boxProfile">     
+  <div class="column noPadding is-5 floatCenter">
+    <div class="box content boxShadow comment leftAndRightMargin">     
       <article class="post">
-        <h4 class="textShadow1px"><a class="techBlogColor"></a>{{user.username}}</a></h4>
+        <h4 class="textShadow1px"><a class="techBlogColor"></a>{{{comment.username}}}</a></h4>
         <div class="media btnSpacing">
           <div class="media-left">
             <p class="image is-32x32">
@@ -28,8 +28,8 @@
           <div class="media-content">
             <div class="content">
               <p>
-                <a href="#">{{user.username}}</a> {{format_date comment.date_created}} &nbsp;
-                <span class="tag textShadow1px">Question</span>
+                <a href="#">{{{comment.user_id}}}</a> {{format_date comment.date_created}} &nbsp;
+                <span class="tag textShadow1px">Comment</span>
               </p>
               <h7 class="textShadow1px">{{comment.commentContent}}
               </h7>
