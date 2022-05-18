@@ -58,14 +58,16 @@ router.get('/post/:id', async (req, res) => {
     const postData = await Post.findByPk(req.params.id, {
       include: [
         {
-          model: User, Post,
-          attributes: ['username',],
+          model: User,
         },
+        {
+        model: Comment,
+        }
       ],
     });
 
     const post = postData.get({ plain: true });
-
+console.log(post)
     res.render('viewPost', {
       ...post,
       logged_in: req.session.logged_in
@@ -147,7 +149,7 @@ router.get('/comment/:id', async (req, res) => {
     const postData = await Comment.findByPk(req.params.id, {
       include: [
         {
-          model: Comment,
+          model: Post,
           attributes: ['commentConent'],
         },
       ],

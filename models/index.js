@@ -21,12 +21,14 @@ User.hasMany(Comment, {
 });
 
 Post.hasMany(Comment, {
-  // foreginKey: 'post_id'
+  foreignKey: 'post_id',
+  // foreignKey: 'user_id',
+
   onDelete: 'CASCADE'
 });
 
 Comment.belongsTo(User, {
-  // foreginKey: 'user_id',
+  foreginKey: 'user_id',
 });
 
 module.exports = { User, Post, Comment };

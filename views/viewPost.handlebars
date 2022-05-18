@@ -13,15 +13,12 @@
     </div>
   </div>
 </section>
-<p>test</p>
-<p>test {{commentContent}}</p>
+ {{#each comments as |comment|}}
 <section>
   <div class="column noPadding is-9">
-    <div class="box content boxProfile">
-      {{#if Comments.length}}
-      {{#each comments as |comment|}}
+    <div class="box content boxProfile">     
       <article class="post">
-        <h4 class="textShadow1px"><a class="techBlogColor"></a>{{comment.user.name}}</a></h4>
+        <h4 class="textShadow1px"><a class="techBlogColor"></a>{{user.username}}</a></h4>
         <div class="media btnSpacing">
           <div class="media-left">
             <p class="image is-32x32">
@@ -31,10 +28,10 @@
           <div class="media-content">
             <div class="content">
               <p>
-                <a href="#">{{user.username}}</a> {{format_date post.date_created}} &nbsp;
+                <a href="#">{{user.username}}</a> {{format_date comment.date_created}} &nbsp;
                 <span class="tag textShadow1px">Question</span>
               </p>
-              <h7 class="textShadow1px">{{post.content}}
+              <h7 class="textShadow1px">{{comment.commentContent}}
               </h7>
             </div>
           </div>
@@ -42,19 +39,13 @@
             <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
           </div>
         </div>
-        <div class="form-group profileBtnMargin">
-          <span class="button is-link modal-button textShadow boxShadow editPostBtn" data-id="{{post.id}}"
-            data-target="modal-card">Edit Post</span>
-          {{!-- <button class="button is-primary is-block is-alt is-large editPostBtn" id="colorRed"
-            data-id="{{post.id}}">Edit Post</button> --}}
+        {{!-- <div class="form-group profileBtnMargin">
           <span class="button is-danger modal-button textShadow boxShadow deletePostBtn" data-target="modal-card"
             data-id="{{post.id}}">Delete Post</span>
-          {{!-- <button class="btn btn-danger deletePostBtn" data-id={{post.id}}>Delete Post</button> --}}
-        </div>
-      </article>
-      {{/each}}
-      {{/if}}
+        </div> --}}
+      </article>    
     </div>
 </section>
+{{/each}}
 
 <script src="/js/viewPost.js"></script>
