@@ -41,7 +41,7 @@
 const addCommentBtnHandler = async (event) => {
     const id = event.target.getAttribute('data-id');
   console.log(id)
-    await document.location.replace(`/post/${id}/addComment`);
+    await document.location.replace(`/post/${id}/comment`);
 
   };
   

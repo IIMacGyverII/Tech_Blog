@@ -14,12 +14,12 @@
   </div>
 </section>
 <p>test</p>
-
+<p>test {{commentContent}}</p>
 <section>
   <div class="column noPadding is-9">
     <div class="box content boxProfile">
       {{#if Comments.length}}
-      {{#each addcomment as |comment|}}
+      {{#each comments as |comment|}}
       <article class="post">
         <h4 class="textShadow1px"><a class="techBlogColor"></a>{{comment.user.name}}</a></h4>
         <div class="media btnSpacing">
