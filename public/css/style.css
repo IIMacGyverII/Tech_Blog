@@ -193,6 +193,13 @@ header, .project:not(:last-child) {
 
 .blueHeader {
   border-radius: 15px;
+  margin-top: -65px;
+  /* box-shadow: inset 0 0 10px 2px; */
+}
+
+.blueHeaderEditPost {
+  border-radius: 15px;
+  margin-top: -32px;
   /* box-shadow: inset 0 0 10px 2px; */
 }
 

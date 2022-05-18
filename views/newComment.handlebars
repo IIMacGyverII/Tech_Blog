@@ -1,11 +1,11 @@
-<section class="container boxShadow borderRadius">
+<section class="container boxShadow borderRadius leftAndRightMargin">
   <div class="columns is-multiline">
     <div class="column is-12 register">
       <div class="columns cardMargin">
         <div class="column is-12 border cardMargin2 postContainer">
-          <h3 class="title is-4">{{title}}</h3>
-          <h4 class="subtitle colorLightBlue is-5">Created by {{user.username}}</h2>
-            <p>{{{content}}}</p>
+          <h3 class="title is-4 textShadow1px techBlogColor">{{title}}</h3>
+          <h4 class="subtitle colorLightBlue is-5 textShadow1px">Created by {{user.username}}</h2>
+            <p class="textShadow1px">{{{content}}}</p>
         </div>
       </div>
     </div>
@@ -14,13 +14,13 @@
 </body>
 <section class="section">
   <div class="container has-text-centered">
-    <h2 class="title">What would you like to comment on this post?</h2>
+    <h2 class="title textShadow1px">What would you like to comment on this post?</h2>
     <form class="new-post-form">
       <div class="field is-horizontal">
         <div class="field-body">
           <div class="field">
             <div class="control boxShadow borderRadius">
-              <textarea class="textarea" id="comment" placeholder="{{id}}"></textarea>
+              <textarea class="textarea textShadow1px" id="comment" placeholder="{{id}}"></textarea>
               <input type="hidden" value="{{id}}" name="post-id"> 
             </div>
           </div>
@@ -30,7 +30,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <button class="button is-primary" id="addCommentBtn">
+              <button class="button is-primary textShadow1px boxShadow" id="addCommentBtn">
                 Submit Comment!
               </button>
             </div>
